@@ -7,10 +7,10 @@ pipeline {
             }
         }
         stage('Build') {
-            steps { powershell 'gradle build'}
+            steps { powershell 'gradlew build'}
         }
         stage('Test') {
-            steps { powershell 'gradle test'} 
+            steps { powershell 'gradlew test'} 
         }
         stage('Deploy') {
             steps { 
